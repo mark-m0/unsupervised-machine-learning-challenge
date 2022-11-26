@@ -1,1 +1,4 @@
 # unsupervised-machine-learning-challenge
+
+
+This challenge is aimed at showing use of unsupervised learning models. The data is called in and the target column is removed. From here, a StandardScaler is used to remove bias that the numerical values may have based on their size. Then, a PCA model is instantiated, where we preserve 90% of the explained variance. Once these values are generated, the dataset dimensions are further reduced using t-SNE. A scatter plot was then generated using the t-SNE results. This scatter plot did not show anything visually obvious, even with the target field incorporated in to color the graph. From here, an elbow plot was generated using kMeans. This involved utilizing a for loop to determine the inertia for each k from 1 to 10. The elbow of the plot appeared to be at 3, meaning that there were 3 possible clusters that the data could be clustered into.
